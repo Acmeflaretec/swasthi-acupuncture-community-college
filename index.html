@@ -76,6 +76,58 @@
 
       </header>
 
+      <!-- modal start -->
+      <form name="registrationForm">
+        <div class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <!-- Modal Content: begins -->
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <div class="body-message">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" >
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone:</label>
+                                <input type="phone" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="course">Course Choice:</label>
+                                <select class="form-control" id="course" name="course">
+                                    <option value="Basic's in acupuncture">Basic's in acupuncture</option>
+                                    <option value="Diploma in acupuncture">Diploma in acupuncture</option>
+                                    <option value="PG diploma in acupuncture">PG diploma in acupuncture</option>
+                                 
+                                </select>
+                            </div>
+                       
+                        </div>
+                        
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" id="registerButton">Register</button>
+                        <div id="loader" class="loader" style="display: none;"></div>
+                    </div>
+                </div>
+                <!-- Modal Content: ends -->
+            </div>
+        </div>
+    </form>
+    
+
+		<!-- modal end -->
+
       
       <div class="hero" style="background-image: url('images/hero_bg_1.jpg');">
         
@@ -167,7 +219,9 @@
   <li>Our affiliation with the Kerala State Resource Centre and Bharath Sevak Samaj ensures credibility and recognition.</li>
 </ul>
 
-              <p><a href="/contact.html" class="btn btn-primary">Contact us now</a></p>
+              <p><a href="/contact.html" class="btn btn-primary contact_bt custom-hover-effect"   data-toggle="modal"
+                 data-target=".bs-example-modal-new"
+                >Enroll now</a></p>
             </div>
           </div>
         </div>
@@ -282,7 +336,9 @@
         <p class="mb-0 opa-7">Unlock the doors to natural healing and holistic wellness today.</p>
       </div>
       <div class="col-lg-5 text-md-right">
-        <a href="contact.html" class="btn btn-primary btn-white">Enroll Now</a>
+        <a href="contact.html" class="btn btn-primary btn-white"
+        data-toggle="modal"
+                 data-target=".bs-example-modal-new">Enroll Now</a>
       </div>
     </div>
   </div>
@@ -350,6 +406,7 @@
       </footer>
 
     </div>
+    <script src="/js/registraton-course.js"></script>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>

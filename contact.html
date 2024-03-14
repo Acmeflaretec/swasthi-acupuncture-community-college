@@ -57,10 +57,8 @@
             <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
               <ul class="site-menu main-menu js-clone-nav ml-auto ">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
                 <li class="active"><a href="contact.html" class="nav-link">Contact</a></li>
               </ul>
             </nav>
@@ -71,6 +69,58 @@
       </div>
 
     </header>
+
+      <!-- modal start -->
+      <form name="registrationForm">
+        <div class="modal fade bs-example-modal-new" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <!-- Modal Content: begins -->
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <div class="body-message">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" >
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone:</label>
+                                <input type="phone" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="course">Course Choice:</label>
+                                <select class="form-control" id="course" name="course">
+                                    <option value="Basic's in acupuncture">Basic's in acupuncture</option>
+                                    <option value="Diploma in acupuncture">Diploma in acupuncture</option>
+                                    <option value="PG diploma in acupuncture">PG diploma in acupuncture</option>
+                                 
+                                </select>
+                            </div>
+                       
+                        </div>
+                        
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" id="registerButton">Register</button>
+                        <div id="loader" class="loader" style="display: none;"></div>
+                    </div>
+                </div>
+                <!-- Modal Content: ends -->
+            </div>
+        </div>
+    </form>rm>
+    
+
+		<!-- modal end -->
 
 
     <div class="hero" style="background-image: url('images/hero_bg_1.jpg');">
@@ -127,6 +177,21 @@
                   <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>info@yourdomain.com</span></li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section bg-primary py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-md-0">
+              <h2 class="mb-0 text-white">Ready to Start Your Acupuncture Journey?</h2>
+              <p class="mb-0 opa-7">Unlock the doors to natural healing and holistic wellness today.</p>
+            </div>
+            <div class="col-lg-5 text-md-right">
+              <a data-toggle="modal"
+              data-target=".bs-example-modal-new" class="btn btn-primary btn-white">Enroll Now</a>
             </div>
           </div>
         </div>
@@ -190,7 +255,7 @@
       </footer>
 
     </div>
-
+    <script src="/js/registraton-course.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

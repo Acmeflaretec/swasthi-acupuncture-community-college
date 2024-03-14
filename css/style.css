@@ -1153,3 +1153,119 @@ h1, h2, h3, h4, h5,
   .post-meta a {
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+
+
+
+/* Custom styles for modal form */
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 20px;
+  background-color: #2fc4b2;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-header .close {
+  color: #fff;
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.modal-header .close:hover {
+  opacity: 1;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-body .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-body label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.modal-body input[type="text"],
+.modal-body select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.modal-body input[type="text"]:focus,
+.modal-body select:focus {
+  border-color: #2fc4b2;
+  outline: none;
+}
+
+.modal-footer {
+  border-top: none;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.modal-footer .btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #2fc4b2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #2fc4b2;
+}
+
+
+.custom-hover-effect:hover {
+background-color: #2fc4b2; /* Change the background color on hover */
+color: #333; /* Change the text color on hover */
+cursor: pointer;
+}
+.btnhovercursor{
+
+cursor: pointer;
+
+}
+
+
+/* Styles for the loading spinner */
+.loader {
+border: 4px solid #f3f3f3;
+border-radius: 50%;
+border-top: 4px solid #82db34;
+width: 30px;
+height: 30px;
+-webkit-animation: spin 2s linear infinite;
+animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg); }
+100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
